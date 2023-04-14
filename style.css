@@ -1,0 +1,38 @@
+
+
+body{
+    background-color: rgb(236, 232, 226);
+}
+
+/* colorea el borde rojo para los datos no validos */
+.given-not-valid {
+    border-color: rgb(255, 0, 0);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255, 0, 0, 0.6);
+    outline: 0 none;
+}
+/* colorea el borde verde para los datos validos */
+.given-valid {
+    border: 1px solid #0ead00;
+    border-color: rgb(0, 255, 60);
+    box-shadow: 0 1px 1px rgba(0, 255, 0, 0.075)inset, 0 0 8px rgba(0, 255, 0, 0.6);
+    outline: 0 none;
+}
+form {
+    width: 92%;
+}
+.form-group {
+    border-radius: 7%;
+}
+/* Elimina el borde de color por defecto de bootstrap */
+input:focus, input[type]:focus {
+    border-color: rgba(0, 0, 0, 0.202);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075)inset, 0 0 8px rgba(255, 0, 0, 0);
+    outline: 0 none;
+}
+
+@media only screen and (min-width: 1200px) {
+    .card{
+        max-width: 40%;
+    }
+  }
+
